@@ -1,0 +1,137 @@
+
+
+.page{
+    width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap:20px;
+    @include respond(tab-land){
+        width: 800px;
+        height: 800px;
+        grid-template-columns: 1.2fr 3fr;
+    }
+    @include respond(tab-port){
+        width: 500px;
+        height: 1400px;
+        grid-template-columns: 1fr 1fr;
+    }
+    @include respond(phone){
+        width: 90%;
+        grid-template-columns: 1fr ;
+        height: 1500px;
+        grid-gap:0px;
+    }
+    @include respond(mini-phone){
+        height: 1370px;
+    }
+
+    &-Nav{
+        background-color: $Dark-blue;
+        border-radius: 15px;
+        @include respond(tab-land){
+            height: 500px;
+        }
+        @include respond(phone){
+            height: 255px;
+        }
+
+   
+        &-01{
+            padding-left: 23px;
+            padding-top: 23px;
+            padding-bottom: 80px;
+            background-color: $Blue;
+            border-radius: 15px;
+            @include respond(phone){
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                height: 180px;
+            }
+            & img{
+                width: 40%;
+                @include respond(phone){
+                    width: 100px;
+                    height: 100px;
+                    margin-top: 15px;
+                }
+                @include respond(mini-phone){
+                    width: 80px;
+                    height: 80px;
+                    margin-top: 30px;
+                }
+            }
+            &-words-div{
+                margin-top: 35px;
+                p{
+                    color: $Pale-Blue;
+                    font-size: 15px;
+                }
+                h2{
+                    color: lighten($color: $Pale-Blue, $amount: 5) ;
+                    font-weight: lighter;
+                    font-size: 35px;
+                }
+            }
+        }
+        &-buttons-div{
+            display: flex;
+            flex-direction: column;
+            padding-top: 23px;
+            padding-left: 23px;
+        
+            @include respond(phone){
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-end;
+                padding-top: 0;
+                padding-left: 0;
+            }
+            & button{
+                border: none;
+                text-align: left;
+                width: fit-content;
+                background-color: transparent;
+                color:  $Pale-Blue;
+                font-size: 18px;
+                height: fit-content;
+                @include respond(phone){
+                    display: inline-block;
+                    text-align: center;
+                    width: auto;
+                }
+
+                &:hover, &:active{
+                    color: lighten($color: $Pale-Blue, $amount: 10) ;
+                    cursor: pointer;
+      
+                }
+            }
+            & button:not(:first-child){
+                margin-top: 23px;
+            }
+        }
+    }
+    &-squares-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:20px;
+        @include respond(tab-land){
+            grid-template-columns: 1fr 1fr;
+        }
+        @include respond(tab-port){
+            grid-template-columns:  1fr;
+        }
+        @include respond(phone){
+            margin-top: -220px;
+        }
+    }
+}
+
+
+ .brightColor{
+    color:  lighten($color: $Pale-Blue, $amount: 10)  !important;
+}

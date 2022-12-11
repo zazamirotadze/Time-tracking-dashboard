@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Work",
+    "src": "./images/icon-work.svg",
+    "timeframes": {
+      "daily": {
+        "sentence": "Last Day",
+        "current": 5,
+        "previous": 7
+      },
+      "weekly": {
+        "sentence": "Last Week",
+        "current": 32,
+        "previous": 36
+      },
+      "monthly": {
+        "sentence": "Last Month",
+        "current": 103,
+        "previous": 128
+      }
+    }
+  },
+  {
+    "title": "Play",
+    "src": "./images/icon-play.svg",
+    "timeframes": {
+      "daily": {
+        "sentence": "Last Day",
+        "current": 1,
+        "previous": 2
+      },
+      "weekly": {
+        "sentence": "Last Week",
+        "current": 10,
+        "previous": 8
+      },
+      "monthly": {
+        "sentence": "Last Month",
+        "current": 23,
+        "previous": 29
+      }
+    }
+  },
+  {
+    "title": "Study",
+    "src": "./images/icon-study.svg",
+    "timeframes": {
+      "daily": {
+        "sentence": "Last Day",
+        "current": 0,
+        "previous": 1
+      },
+      "weekly": {
+        "sentence": "Last Week",
+        "current": 4,
+        "previous": 7
+      },
+      "monthly": {
+        "sentence": "Last Month",
+        "current": 13,
+        "previous": 19
+      }
+    }
+  },
+  {
+    "title": "Exercise",
+    "src": "./images/icon-exercise.svg",
+    "timeframes": {
+      "daily": {
+        "sentence": "Last Day",
+        "current": 1,
+        "previous": 1
+      },
+      "weekly": {
+        "sentence": "Last Week",
+        "current": 4,
+        "previous": 5
+      },
+      "monthly": {
+        "sentence": "Last Month",
+        "current": 11,
+        "previous": 18
+      }
+    }
+  },
+  {
+    "title": "Social",
+    "src": "./images/icon-social.svg",
+    "timeframes": {
+      "daily": {
+        "sentence": "Last Day",
+        "current": 1,
+        "previous": 3
+      },
+      "weekly": {
+        "sentence": "Last Week",
+        "current": 5,
+        "previous": 10
+      },
+      "monthly": {
+        "sentence": "Last Month",
+        "current": 21,
+        "previous": 23
+      }
+    }
+  },
+  {
+    "title": "Self Care",
+    "src": "./images/icon-self-care.svg",
+    "timeframes": {
+      "daily": {
+        "sentence": "Last Day",
+        "current": 0,
+        "previous": 1
+      },
+      "weekly": {
+        "sentence": "Last Week",
+        "current": 2,
+        "previous": 2
+      },
+      "monthly": {
+        "sentence": "Last Month",
+        "current": 7,
+        "previous": 11
+      }
+    }
+  }
+]

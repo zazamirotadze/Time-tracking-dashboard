@@ -1,0 +1,325 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: hsl(73deg, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(226deg, 43%, 10%);
+}
+
+.page {
+  width: 1100px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 20px;
+}
+@media (max-width: 1200px) {
+  .page {
+    width: 800px;
+    height: 800px;
+    grid-template-columns: 1.2fr 3fr;
+  }
+}
+@media (max-width: 900px) {
+  .page {
+    width: 500px;
+    height: 1400px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .page {
+    width: 90%;
+    grid-template-columns: 1fr;
+    height: 1500px;
+    grid-gap: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .page {
+    height: 1370px;
+  }
+}
+.page-Nav {
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 15px;
+}
+@media (max-width: 1200px) {
+  .page-Nav {
+    height: 500px;
+  }
+}
+@media (max-width: 600px) {
+  .page-Nav {
+    height: 255px;
+  }
+}
+.page-Nav-01 {
+  padding-left: 23px;
+  padding-top: 23px;
+  padding-bottom: 80px;
+  background-color: hsl(246deg, 80%, 60%);
+  border-radius: 15px;
+}
+@media (max-width: 600px) {
+  .page-Nav-01 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 180px;
+  }
+}
+.page-Nav-01 img {
+  width: 40%;
+}
+@media (max-width: 600px) {
+  .page-Nav-01 img {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .page-Nav-01 img {
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+  }
+}
+.page-Nav-01-words-div {
+  margin-top: 35px;
+}
+.page-Nav-01-words-div p {
+  color: hsl(236deg, 100%, 87%);
+  font-size: 15px;
+}
+.page-Nav-01-words-div h2 {
+  color: #d6d9ff;
+  font-weight: lighter;
+  font-size: 35px;
+}
+.page-Nav-buttons-div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 23px;
+  padding-left: 23px;
+}
+@media (max-width: 600px) {
+  .page-Nav-buttons-div {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-top: 0;
+    padding-left: 0;
+  }
+}
+.page-Nav-buttons-div button {
+  border: none;
+  text-align: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: transparent;
+  color: hsl(236deg, 100%, 87%);
+  font-size: 18px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media (max-width: 600px) {
+  .page-Nav-buttons-div button {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+  }
+}
+.page-Nav-buttons-div button:hover, .page-Nav-buttons-div button:active {
+  color: #f0f1ff;
+  cursor: pointer;
+}
+.page-Nav-buttons-div button:not(:first-child) {
+  margin-top: 23px;
+}
+.page-squares-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+@media (max-width: 1200px) {
+  .page-squares-div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .page-squares-div {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .page-squares-div {
+    margin-top: -220px;
+  }
+}
+
+.brightColor {
+  color: #f0f1ff !important;
+}
+
+.square-img-div {
+  position: relative;
+  overflow: hidden;
+  height: 18%;
+}
+.square-img-div > img {
+  position: absolute;
+  top: -18%;
+  right: 5%;
+}
+.square-info-div {
+  padding: 30px;
+  background-color: hsl(235deg, 46%, 20%);
+  height: 82%;
+  border-radius: 12px;
+}
+.square-info-div:hover, .square-info-div:active {
+  background-color: #292f70;
+  cursor: pointer;
+}
+.square-info-div-01 h3 {
+  font-size: 18px;
+  color: #f0f1ff;
+  font-weight: normal;
+}
+@media (max-width: 600px) {
+  .square-info-div-02 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.square-info-div-02 h1 {
+  color: #f0f1ff;
+  font-weight: lighter;
+  font-size: 50px;
+  margin-top: 20px;
+}
+@media (max-width: 600px) {
+  .square-info-div-02 h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .square-info-div-02 h1 {
+    font-size: 20px;
+  }
+}
+.square-info-div-02 h4 {
+  color: hsl(236deg, 100%, 87%);
+  font-size: 15px;
+  font-weight: lighter;
+  margin-top: 6px;
+}
+@media (max-width: 400px) {
+  .square-info-div-02 h4 {
+    font-size: 13px;
+  }
+}
+
+.elipsis-div {
+  position: absolute;
+  top: 30%;
+  right: 12%;
+}
+@media (max-width: 600px) {
+  .elipsis-div {
+    top: 37%;
+    right: 28px;
+  }
+}
+.elipsis-div:hover, .elipsis-div:active {
+  cursor: pointer;
+  filter: brightness(3);
+}
+.elipsis-div:hover ~ .square-info-div, .elipsis-div:active ~ .square-info-div {
+  background-color: #171b3f;
+}
+.elipsis-div img {
+  margin-bottom: 3px;
+  width: 90%;
+}
+
+.make-orange {
+  background-color: hsl(15deg, 100%, 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 15px;
+  position: relative;
+  overflow: visible;
+}
+
+.make-cyan {
+  background-color: hsl(195deg, 74%, 62%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 15px;
+  position: relative;
+  overflow: visible;
+}
+
+.make-red {
+  background-color: hsl(348deg, 100%, 68%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 15px;
+  position: relative;
+  overflow: visible;
+}
+
+.make-green {
+  background-color: hsl(145deg, 58%, 55%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 15px;
+  position: relative;
+  overflow: visible;
+}
+
+.make-violet {
+  background-color: hsl(264deg, 64%, 52%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 15px;
+  position: relative;
+  overflow: visible;
+}
+
+.make-yellow {
+  background-color: hsl(43deg, 84%, 65%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 15px;
+  position: relative;
+  overflow: visible;
+}/*# sourceMappingURL=index.css.map */

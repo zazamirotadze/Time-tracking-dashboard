@@ -1,0 +1,119 @@
+.square{
+    &-img-div{
+        position: relative;
+        overflow: hidden;
+        height: 18%;
+        & > img{
+            position: absolute;
+            top: -18%;
+            right: 5%;
+
+        }
+    }
+
+    &-info-div{
+        padding: 30px;
+        background-color: $Dark-blue;
+        height: 82%;
+        border-radius: 12px;
+        &:hover,&:active{
+            background-color: lighten($color:  $Dark-blue, $amount: 10);
+            cursor: pointer;
+        }
+        &-01{
+            & h3{
+                font-size: 18px;
+                color: lighten($color: $Pale-Blue, $amount: 10) ;  
+                font-weight: normal;
+            }
+
+        }
+        &-02{
+            @include respond(phone){
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            & h1{
+                color: lighten($color: $Pale-Blue, $amount: 10) ;  
+                font-weight: lighter;
+                font-size: 50px;
+                margin-top: 20px;
+                @include respond(phone){
+                    font-size: 40px;
+                }
+                @include respond(mini-phone){
+                    font-size: 20px;
+                }
+            }
+    
+            & h4{
+                color: $Pale-Blue;
+                font-size: 15px;
+                font-weight: lighter;
+                margin-top: 6px;
+                @include respond(mini-phone){
+                    font-size: 13px;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+.elipsis-div{
+    position: absolute;
+    top: 30%;
+    right: 12%;
+    @include respond(phone){
+        top: 37%;
+        right: 28px;
+    }
+        &:hover, &:active{
+            cursor: pointer;
+            filter: brightness(3);
+        }
+        &:hover ~ .square-info-div , &:active ~ .square-info-div{
+            background-color: darken($color:  $Dark-blue, $amount: 3);
+        }
+
+        & img{
+            margin-bottom: 3px;
+            width: 90%;
+        }
+    
+}
+
+
+.make-orange{
+   background-color: $Light-orange; 
+   @include squareGeneral;
+}
+.make-cyan{
+    background-color: $Soft-blue;
+    @include squareGeneral; 
+}
+.make-red{
+    background-color: $Light-red; 
+    @include squareGeneral;
+}
+.make-green{
+    background-color: $Lime-green; 
+    @include squareGeneral;
+}
+.make-violet{
+    background-color: $Violet-social;
+    @include squareGeneral; 
+}
+.make-yellow{
+    background-color: $Soft-orange; 
+    @include squareGeneral;
+}
+
+
+
+
+
+
